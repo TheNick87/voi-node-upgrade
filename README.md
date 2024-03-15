@@ -70,3 +70,33 @@ goal account changeonlinestatus -a $addr -o=1 &&\
 sleep 1 &&\
 goal account dump -a $addr | jq -r 'if (.onl == 1) then "You are online!" else "You are offline." end'
 ```
+
+## 6. Check if everything is ok
+
+```
+goal node status
+```
+should prompt the following output
+```
+Last committed block: 5153512
+Time since last block: 0.9s
+Sync Time: 64.4s
+Last consensus protocol: https://github.com/algorandfoundation/specs/tree/925a46433742afb0b51bb939354bd907fa88bf95
+Next consensus protocol: https://github.com/algorandfoundation/specs/tree/925a46433742afb0b51bb939354bd907fa88bf95
+Round for next consensus protocol: 5153513
+Next consensus protocol supported: true
+Last Catchpoint:
+Genesis ID: voitest-v1
+Genesis hash: IXnoWtviVVJW5LGivNFc0Dq14V3kqaXuK2u5OQrdVZo=
+```
+and
+```
+goal -v
+```
+should prompt the following output (depending on your version)
+```
+3298903982081
+3.22.1.stable [rel/stable] (commit #08407ca8)
+go-algorand is licensed with AGPLv3.0
+source code available at https://github.com/algorand/go-algorand
+```
