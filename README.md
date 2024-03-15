@@ -1,8 +1,8 @@
 # voi-node-upgrade
 VOI node manually upgrade procedure
 
-This procedure has been tested on an already running node on Ubuntu 22.04
-The procedure to set up the VOI node used is this: https://d13.co/posts/set-up-voi-participation-node/
+This procedure has been tested on an already running node on Ubuntu 22.04.
+The procedure used to set up the VOI node is this: https://d13.co/posts/set-up-voi-participation-node/
 
 ## 1. Put the node offline
 ```
