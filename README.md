@@ -45,7 +45,7 @@ sudo systemctl stop voi && sudo systemctl disable voi && echo OK
 
 ```
 sudo apt update &&\
-suao apt upgrade -y
+sudo apt upgrade -y
 ```
 
 ## 4. Restart the node
